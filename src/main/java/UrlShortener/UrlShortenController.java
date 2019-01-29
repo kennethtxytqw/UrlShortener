@@ -12,8 +12,11 @@ import javax.servlet.http.HttpServletRequest;
 @RequestMapping("/")
 public class UrlShortenController {
 
-    @Autowired
     private UrlShortenService shortenerService;
+
+    public UrlShortenController(@Autowired UrlShortenService shortenerService) {
+        this.shortenerService = shortenerService;
+    }
 
     @PostMapping(value = "shortener")
     public ResponseEntity<String> shortenUrl(@RequestParam(name = "url") String originalUrl,

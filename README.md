@@ -19,3 +19,4 @@
 ## Improvements to be made
 1. Authentication with api-key.
 2. Integrate a database for persistent storage.
+3. More unit tests to be written.
