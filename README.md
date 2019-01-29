@@ -2,6 +2,7 @@
 
 ## Local development requirements
 - java development kit 8
+    - For linux, `sudo apt-get install openjdk-8-jdk`
 
 ## Running locally
 1. `git clone` this repo
