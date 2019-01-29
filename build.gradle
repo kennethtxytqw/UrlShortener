@@ -32,3 +32,8 @@ dependencies {
     compile('io.springfox:springfox-swagger-ui:2.9.2')
     testCompile("junit:junit")
 }
+
+jar {
+    baseName = rootProject.name
+    enabled = true
+}
