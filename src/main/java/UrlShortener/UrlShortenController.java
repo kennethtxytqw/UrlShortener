@@ -18,6 +18,8 @@ public class UrlShortenController {
     @PostMapping(value = "shortener")
     public ResponseEntity<String> shortenUrl(@RequestParam(name = "url") String originalUrl,
                                              HttpServletRequest request) {
+        // TODO: Urls are not validated.
+        // TODO: Urls without protocols (http/https) indicated does not redirect properly.
         try {
             String shortenedUrl = request.getRequestURL().toString()
                     + "/r/"
