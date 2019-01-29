@@ -1,7 +1,10 @@
 # UrlShortener
 
-## Running Locally
-1. Git pull this repo
+## Local development requirements
+- java development kit 8
+
+## Running locally
+1. `git clone` this repo
 2. `cd` into the project base directory.
 3. Run `./gradlew run`.
 4. Access `localhost:8080/swagger-ui.html` with your preferred web browser.
